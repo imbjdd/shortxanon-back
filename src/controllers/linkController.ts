@@ -30,16 +30,6 @@ for (var r in response.data.query.random) {
 
 secret_key = secret_key.substring(1);
 
-/*fetch("https://fr.wiktionary.org/w/api.php?origin=*&action=query&format=json&list=random&rnlimit=5&rnnamespace=0")
-    .then(function(response){return response.json();})
-    .then(function(response) {
-	var randoms = response.query.random;
-	for (var r in randoms) {
-	    secret_key = secret_key + "-" + randoms[r].title;
-	}
-    })
-    .catch(function(error){console.log(error);});*/
-
   var link = new Link({url_redirect:req.body.url_redirect,access_id:Math.random().toString(36).substring(7),secret_key:secret_key});
   link.save((err: any) => {
     if (err) {

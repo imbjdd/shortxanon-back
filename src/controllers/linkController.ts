@@ -7,8 +7,6 @@ export let getLink = (req: Request, res: Response) => {
     if (err) {
       res.send(err);
     } else {
-console.log(link)
-console.log(link[0].url_redirect);
       res.send(link[0].url_redirect);
     }
   });

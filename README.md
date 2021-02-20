@@ -1,5 +1,5 @@
 # Qu'est-ce que ShortXanon ?
-ShortXanon est un url-shortner opensource développé à l'aide de TypeScript, Express et MongoDB principalement pour le back-end et VueJS pour le front-end.
+ShortXanon est un url-shortner opensource développé à l'aide de TypeScript, Express avec MongoDB comme SGBD pour le back-end.
 
 ## Comment fonctionne le projet ?
 Il suffit de donner un lien (ex: `https://exemple.com/article/484846484-exemple`) et ShortXanon vous donne un lien plus court en retour.
